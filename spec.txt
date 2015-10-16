@@ -1,0 +1,19 @@
+a:b:c -> a: { b: c }
+
+a:b:c d:e..x:y -> a: { b: c, d: e }, x: y
+
+a:b -> "a": "b"
+
+a:b c d:e -> "a": "b c", "d": "e"
+
+a::b c d -> a: [ b, c, d ]
+
+a::b c d..e:x:y..n:k -> a: [ b, c, d ], e: { x: y }, n: k
+
+:b:c -> { b: c }
+
+::b c e -> [ b, c, e ]
+
+a::b c :d e :x y -> a: [ b, c, "d e", "x y" ]
+
+
